@@ -55,7 +55,7 @@ def main():
 		passwords =  [c.split(":")[1] for c in creds]
 		pairs =      [(c.split(":")[0],c.split(":")[1]) for c in creds]
 
-	target = args.target
+	target = args.target + "/index.php"
 	test_passwords(pairs, target)
 
 
